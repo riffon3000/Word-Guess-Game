@@ -1,13 +1,15 @@
+// Initialize array of computerWord and guesses.
 var computerWord = ["f", "a", "m", "e"];
 var guesses = ["_", "_", "_", "_"];
+// Initialize variables that reference to place where to display in HTML.
 var guessesText = document.getElementById("guesses-text");
 var msgText = document.getElementById("msg-text");
-
+// Keypress returns to letter() function
 document.onkeyup = function(event){
     var keyPress = event.key;
     return letter(keyPress);
 }
-
+// function that checks keyPress
 function letter(guessed) {
     var userGuess = false;
     var guessAgain = false;
