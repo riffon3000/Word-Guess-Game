@@ -5,8 +5,9 @@ var guesses = ["_", "_", "_", "_"];
 var guessesText = document.getElementById("guesses-text");
 var msgText = document.getElementById("msg-text");
 // Keypress returns to letter() function
-document.onkeyup = function(event){
+document.onkeyup = function (event) {
     var keyPress = event.key;
+    console.log(keyPress);
     return letter(keyPress);
 }
 // function that checks keyPress
